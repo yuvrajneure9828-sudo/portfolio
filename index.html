@@ -1,728 +1,193 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Yuvraj Neure — Flutter Developer</title>
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
-<style>
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-:root {
-  --flutter-blue: #0553B1;
-  --flutter-mid: #1976D2;
-  --flutter-sky: #29B6F6;
-  --flutter-teal: #00897B;
-  --white: #ffffff;
-  --bg: #F7F9FC;
-  --surface: #ffffff;
-  --surface2: #EEF4FF;
-  --text-primary: #0D1B2E;
-  --text-secondary: #3D5068;
-  --text-muted: #7A8FA6;
-  --border: #DDE6F0;
-  --border-mid: #B8CFEA;
-  --accent-fill: #EAF2FF;
-  --tag-bg: #E8F1FD;
-  --tag-text: #0553B1;
-  --green-bg: #E6F7F3;
-  --green-text: #00695C;
-  --radius-sm: 8px;
-  --radius-md: 12px;
-  --radius-lg: 18px;
-  --shadow-sm: 0 1px 4px rgba(5,83,177,0.07);
-  --shadow-md: 0 4px 20px rgba(5,83,177,0.10);
-}
+Yuvraj Neure
+Skills
+Projects
+Experience
+Contact
+Hire me
 
-html { scroll-behavior: smooth; }
+FLUTTER DEVELOPER · 3 YEARS EXPERIENCE
+Yuvraj Neure
+I build polished, production-ready cross-platform mobile apps using Flutter & Dart — shipping real apps across healthcare, food delivery, home services, and AI tools. Every project live on Play Store and App Store.
+15+
+Apps live
 
-body {
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  background: var(--bg);
-  color: var(--text-primary);
-  line-height: 1.6;
-  overflow-x: hidden;
-}
+3
+Years Flutter
 
-/* ── NAV ── */
-nav {
-  position: sticky; top: 0; z-index: 100;
-  background: rgba(255,255,255,0.92);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--border);
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 0 3rem; height: 64px;
-}
-.nav-brand {
-  display: flex; align-items: center; gap: 10px;
-  font-weight: 800; font-size: 16px; color: var(--flutter-blue);
-  text-decoration: none;
-}
-.nav-logo-mark {
-  width: 36px; height: 36px; border-radius: 10px;
-  background: var(--flutter-blue);
-  display: flex; align-items: center; justify-content: center;
-}
-.nav-logo-mark svg { width: 22px; height: 22px; }
-.nav-links { display: flex; gap: 2.5rem; }
-.nav-links a {
-  font-size: 13.5px; font-weight: 600; color: var(--text-secondary);
-  text-decoration: none; transition: color 0.18s;
-  letter-spacing: 0.01em;
-}
-.nav-links a:hover { color: var(--flutter-blue); }
-.nav-cta {
-  background: var(--flutter-blue); color: #fff;
-  border: none; padding: 9px 22px; border-radius: var(--radius-sm);
-  font-size: 13px; font-weight: 700; cursor: pointer;
-  font-family: inherit; transition: background 0.18s;
-  letter-spacing: 0.02em;
-}
-.nav-cta:hover { background: #0443A0; }
+2
+Companies
+View live apps
+Get in touch
+YN
+Yuvraj Neure
+Flutter Developer · 3 Years · Jaipur, India
 
-/* ── HERO ── */
-.hero {
-  max-width: 1100px; margin: 0 auto;
-  padding: 5.5rem 3rem 4rem;
-  display: grid; grid-template-columns: 1fr 300px; gap: 4rem; align-items: center;
-}
-.hero-badge {
-  display: inline-flex; align-items: center; gap: 8px;
-  background: var(--accent-fill); color: var(--flutter-blue);
-  font-size: 11.5px; font-weight: 700; letter-spacing: 0.08em;
-  text-transform: uppercase; padding: 6px 14px;
-  border-radius: 100px; border: 1px solid var(--border-mid);
-  margin-bottom: 1.25rem;
-}
-.hero-badge-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--flutter-blue); }
-h1 {
-  font-size: clamp(2.6rem, 5vw, 3.8rem);
-  font-weight: 800; line-height: 1.08;
-  color: var(--text-primary); margin-bottom: 0.6rem;
-  letter-spacing: -0.02em;
-}
-h1 .accent { color: var(--flutter-blue); }
-.hero-title {
-  font-size: 1.05rem; color: var(--text-secondary);
-  margin-bottom: 1.8rem; line-height: 1.7; max-width: 520px;
-}
-.hero-stats {
-  display: flex; gap: 2rem; margin-bottom: 2rem;
-  padding: 1.25rem 1.5rem;
-  background: var(--surface); border: 1px solid var(--border);
-  border-radius: var(--radius-md); width: fit-content;
-  box-shadow: var(--shadow-sm);
-}
-.stat-val { font-size: 1.8rem; font-weight: 800; color: var(--flutter-blue); line-height: 1; }
-.stat-lbl { font-size: 11px; font-weight: 600; color: var(--text-muted); margin-top: 3px; letter-spacing: 0.04em; }
-.stat-div { width: 1px; background: var(--border); }
-.hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
-.btn-primary {
-  background: var(--flutter-blue); color: #fff;
-  border: none; padding: 13px 28px; border-radius: var(--radius-sm);
-  font-size: 14px; font-weight: 700; cursor: pointer;
-  font-family: inherit; transition: background 0.18s;
-}
-.btn-primary:hover { background: #0443A0; }
-.btn-outline {
-  background: var(--white); color: var(--flutter-blue);
-  border: 1.5px solid var(--border-mid); padding: 13px 28px;
-  border-radius: var(--radius-sm); font-size: 14px; font-weight: 700;
-  cursor: pointer; font-family: inherit; transition: border-color 0.18s, background 0.18s;
-}
-.btn-outline:hover { border-color: var(--flutter-blue); background: var(--accent-fill); }
+Open to opportunities 📧
+yuvrajniure9828@gmail.com
+📱
++91 8619806021
+📍
+Jaipur, Rajasthan 303012
 
-/* ── HERO CARD ── */
-.hero-card {
-  background: var(--surface); border: 1px solid var(--border);
-  border-radius: var(--radius-lg); padding: 2rem;
-  box-shadow: var(--shadow-md); text-align: center;
-}
-.avatar {
-  width: 100px; height: 100px; border-radius: 50%; margin: 0 auto 1rem;
-  background: linear-gradient(135deg, var(--flutter-blue) 0%, var(--flutter-sky) 100%);
-  display: flex; align-items: center; justify-content: center;
-  font-size: 2.2rem; font-weight: 800; color: #fff;
-  border: 3px solid var(--border);
-}
-.hero-card-name { font-size: 1.15rem; font-weight: 800; color: var(--text-primary); }
-.hero-card-role { font-size: 13px; color: var(--text-muted); margin-bottom: 1rem; font-weight: 500; }
-.availability {
-  display: inline-flex; align-items: center; gap: 6px;
-  background: var(--green-bg); color: var(--green-text);
-  font-size: 12px; font-weight: 700; padding: 5px 13px;
-  border-radius: 100px; margin-bottom: 1.25rem;
-  border: 1px solid rgba(0,105,92,0.2);
-}
-.dot-pulse { width: 7px; height: 7px; border-radius: 50%; background: var(--green-text); animation: pulse 2s infinite; }
-@keyframes pulse { 0%,100%{opacity:1}50%{opacity:0.35} }
-.hero-card-info { display: flex; flex-direction: column; gap: 8px; text-align: left; }
-.info-row {
-  display: flex; align-items: center; gap: 8px;
-  font-size: 13px; color: var(--text-secondary); font-weight: 500;
-}
-.info-icon {
-  width: 28px; height: 28px; border-radius: 7px;
-  background: var(--accent-fill); display: flex; align-items: center; justify-content: center;
-  font-size: 14px; flex-shrink: 0;
-}
-.info-link { color: var(--flutter-blue); text-decoration: none; font-weight: 600; font-size: 12.5px; }
-.info-link:hover { text-decoration: underline; }
+WHAT I BRING
+Technical skills
+Flutter & Dart
+95%
 
-/* ── SECTION COMMON ── */
-.section-wrap { max-width: 1100px; margin: 0 auto; padding: 4rem 3rem; }
-.section-label {
-  display: inline-flex; align-items: center; gap: 6px;
-  font-size: 11px; font-weight: 800; letter-spacing: 0.12em;
-  text-transform: uppercase; color: var(--flutter-blue);
-  margin-bottom: 0.5rem;
-}
-.section-label::before { content: ''; width: 18px; height: 2px; background: var(--flutter-blue); border-radius: 2px; }
-h2.section-title {
-  font-size: clamp(1.6rem, 3vw, 2.1rem);
-  font-weight: 800; color: var(--text-primary);
-  margin-bottom: 2rem; letter-spacing: -0.015em;
-}
-hr.divider { border: none; border-top: 1px solid var(--border); max-width: 1100px; margin: 0 auto; }
+Stateful/Stateless widgets, Custom UI, Material & Cupertino
+State management
+90%
 
-/* ── SKILLS ── */
-.skills-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
-.skill-card {
-  background: var(--surface); border: 1px solid var(--border);
-  border-radius: var(--radius-md); padding: 1.25rem 1.4rem;
-  box-shadow: var(--shadow-sm);
-}
-.skill-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
-.skill-name { font-size: 14px; font-weight: 700; color: var(--text-primary); }
-.skill-pct {
-  font-size: 13px; font-weight: 700; color: var(--flutter-blue);
-  font-family: 'JetBrains Mono', monospace;
-}
-.skill-bar-bg { height: 5px; background: var(--border); border-radius: 100px; overflow: hidden; }
-.skill-bar-fill {
-  height: 100%; border-radius: 100px; width: 0;
-  background: linear-gradient(90deg, var(--flutter-blue), var(--flutter-sky));
-  transition: width 1.3s cubic-bezier(0.4,0,0.2,1);
-}
-.skill-sub { font-size: 11.5px; color: var(--text-muted); margin-top: 6px; font-weight: 500; }
-.tags-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 1.75rem; }
-.tag {
-  background: var(--tag-bg); color: var(--tag-text);
-  font-size: 12px; font-weight: 700; padding: 4px 11px;
-  border-radius: 6px; border: 1px solid var(--border-mid);
-  font-family: 'JetBrains Mono', monospace;
-}
+GetX, MVVM, Clean Architecture, Repository Pattern, Melos
+Firebase & Backend
+90%
 
-/* ── PROJECTS ── */
-.projects-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
-.project-card {
-  background: var(--surface); border: 1px solid var(--border);
-  border-radius: var(--radius-lg); padding: 1.5rem;
-  box-shadow: var(--shadow-sm); display: flex; flex-direction: column;
-  transition: box-shadow 0.2s, border-color 0.2s;
-}
-.project-card:hover { box-shadow: var(--shadow-md); border-color: var(--border-mid); }
-.project-icon-wrap {
-  width: 48px; height: 48px; border-radius: 12px;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 1.5rem; margin-bottom: 0.9rem; flex-shrink: 0;
-}
-.project-meta { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 6px; }
-.project-title { font-size: 15px; font-weight: 800; color: var(--text-primary); }
-.project-platform {
-  font-size: 10px; font-weight: 700; letter-spacing: 0.06em;
-  text-transform: uppercase; color: var(--text-muted); margin-top: 2px;
-}
-.project-desc { font-size: 12.5px; color: var(--text-secondary); line-height: 1.65; margin-bottom: 1rem; flex: 1; }
-.project-stack { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 1rem; }
-.stack-chip {
-  font-size: 10.5px; font-weight: 700; padding: 2px 8px;
-  border-radius: 5px; font-family: 'JetBrains Mono', monospace;
-  background: var(--tag-bg); color: var(--tag-text); border: 1px solid var(--border-mid);
-}
-.project-link {
-  display: inline-flex; align-items: center; gap: 5px;
-  font-size: 12px; font-weight: 700; color: var(--flutter-blue);
-  text-decoration: none; margin-top: auto;
-}
-.project-link:hover { text-decoration: underline; }
-.project-link svg { width: 12px; height: 12px; }
+Auth, Firestore, Push Notifications, Crashlytics, Analytics
+REST APIs & integrations
+88%
 
-/* ── EXPERIENCE ── */
-.timeline { display: flex; flex-direction: column; gap: 0; }
-.tl-item { display: grid; grid-template-columns: 130px 1fr; gap: 0 2rem; }
-.tl-left { text-align: right; padding-top: 3px; }
-.tl-period { font-size: 11.5px; font-weight: 700; color: var(--text-muted); font-family: 'JetBrains Mono', monospace; line-height: 1.5; }
-.tl-right { position: relative; padding-bottom: 2.75rem; padding-left: 1.75rem; }
-.tl-right::before {
-  content: ''; position: absolute; left: 0; top: 10px; bottom: 0;
-  width: 1.5px; background: var(--border);
-}
-.tl-dot {
-  position: absolute; left: -5px; top: 7px;
-  width: 12px; height: 12px; border-radius: 50%;
-  background: var(--flutter-blue); border: 2.5px solid var(--bg); z-index: 1;
-}
-.tl-company-row { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; }
-.tl-role { font-size: 15.5px; font-weight: 800; color: var(--text-primary); }
-.tl-company { font-size: 13px; font-weight: 700; color: var(--flutter-blue); }
-.tl-location { font-size: 11.5px; color: var(--text-muted); font-weight: 500; }
-.tl-bullets { list-style: none; margin-top: 8px; display: flex; flex-direction: column; gap: 5px; }
-.tl-bullets li {
-  font-size: 13px; color: var(--text-secondary); line-height: 1.6;
-  padding-left: 14px; position: relative;
-}
-.tl-bullets li::before {
-  content: ''; position: absolute; left: 0; top: 9px;
-  width: 5px; height: 5px; border-radius: 50%; background: var(--flutter-sky);
-}
-.edu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-top: 0.5rem; }
-.edu-card {
-  background: var(--surface); border: 1px solid var(--border);
-  border-radius: var(--radius-md); padding: 1.25rem 1.4rem;
-  box-shadow: var(--shadow-sm);
-}
-.edu-degree { font-size: 14px; font-weight: 800; color: var(--text-primary); }
-.edu-school { font-size: 13px; font-weight: 600; color: var(--flutter-blue); margin: 2px 0; }
-.edu-year { font-size: 12px; color: var(--text-muted); font-family: 'JetBrains Mono', monospace; font-weight: 600; }
+Dio, Retrofit, HTTP, Socket.IO, Agora, Google Maps
+Payments & In-App Purchase
+85%
 
-/* ── CONTACT ── */
-.contact-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.25rem; }
-.contact-card {
-  background: var(--surface); border: 1px solid var(--border);
-  border-radius: var(--radius-md); padding: 1.25rem;
-  box-shadow: var(--shadow-sm); transition: border-color 0.18s;
-  text-decoration: none; display: block;
-}
-.contact-card:hover { border-color: var(--flutter-blue); }
-.cc-icon { font-size: 1.5rem; margin-bottom: 8px; }
-.cc-label { font-size: 11px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 4px; }
-.cc-value { font-size: 14px; font-weight: 700; color: var(--text-primary); }
+Stripe, Razorpay, Sadad, Moamalat, IAP
+Deployment & DevOps
+80%
 
-/* ── FOOTER ── */
-footer {
-  text-align: center; padding: 2rem 3rem;
-  color: var(--text-muted); font-size: 12.5px;
-  border-top: 1px solid var(--border);
-  background: var(--white);
-}
-footer strong { color: var(--flutter-blue); }
+Play Store, App Store, Git/GitHub/GitLab, Fastlane, Postman
+Lottie Animations
+SSL Pinning
+Root Detection
+Flutter Localization
+Adobe XD
+Figma
+Android Studio
+OpenAI API
+Real-time location
+Google Places API
 
-@media (max-width: 900px) {
-  .hero { grid-template-columns: 1fr; }
-  .projects-grid { grid-template-columns: 1fr 1fr; }
-  .skills-layout { grid-template-columns: 1fr; }
-}
-@media (max-width: 640px) {
-  nav { padding: 0 1.25rem; }
-  .nav-links { display: none; }
-  .hero { padding: 3rem 1.25rem 2.5rem; }
-  .section-wrap { padding: 2.5rem 1.25rem; }
-  .projects-grid { grid-template-columns: 1fr; }
-  .contact-grid { grid-template-columns: 1fr; }
-  .edu-grid { grid-template-columns: 1fr; }
-  .tl-item { grid-template-columns: 1fr; }
-  .tl-left { text-align: left; }
-}
-</style>
-</head>
-<body>
+REAL, LIVE APPS
+Featured projects
+🏥
+Avicenna Care & Doctor
+IOS · ANDROID · LIBYA
+Healthcare consultation platform for Libya — patients book appointments, do video consultations via Agora, order medicine, and access lab services. Two separate apps: patient-facing and doctor-facing, both live.
+Flutter
+GetX
+Agora
+Dio
+Firebase
+Localization
+Sadad
+avicenna-care.com
 
-<!-- NAV -->
-<nav>
-  <a class="nav-brand" href="#">
-    <div class="nav-logo-mark">
-      <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M5 18L11 4L17 18" stroke="#54C5F8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M7 14H15" stroke="#54C5F8" stroke-width="2.5" stroke-linecap="round"/>
-      </svg>
-    </div>
-    Yuvraj Neure
-  </a>
-  <div class="nav-links">
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#experience">Experience</a>
-    <a href="#contact">Contact</a>
-  </div>
-  <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Hire me</button>
-</nav>
+🌿
+PlantSpotify
+IOS · ANDROID · GLOBAL
+AI plant identifier — snap a photo to get instant plant name, disease diagnosis, care tips, and watering schedules. Features In-App Purchase for premium unlimited scans and a personal digital nursery.
+Flutter
+GetX
+Dio
+Firebase
+In-App Purchase
+Localization
+plantspotify.com
 
-<!-- HERO -->
-<div class="hero">
-  <div>
-    <div class="hero-badge"><span class="hero-badge-dot"></span> Flutter Developer · 3 Years Experience</div>
-    <h1>Yuvraj<br><span class="accent">Neure</span></h1>
-    <p class="hero-title">
-      I build polished, production-ready cross-platform mobile apps using Flutter & Dart — shipping real apps across healthcare, food delivery, home services, and AI tools. Every project live on Play Store and App Store.
-    </p>
-    <div class="hero-stats">
-      <div class="stat"><div class="stat-val">8+</div><div class="stat-lbl">Apps live</div></div>
-      <div class="stat-div"></div>
-      <div class="stat"><div class="stat-val">3</div><div class="stat-lbl">Years Flutter</div></div>
-      <div class="stat-div"></div>
-      <div class="stat"><div class="stat-val">2</div><div class="stat-lbl">Companies</div></div>
-    </div>
-    <div class="hero-actions">
-      <button class="btn-primary" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">View live apps</button>
-      <button class="btn-outline" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get in touch</button>
-    </div>
-  </div>
-  <div class="hero-card">
-    <div class="avatar">YN</div>
-    <div class="hero-card-name">Yuvraj Neure</div>
-    <div class="hero-card-role">Flutter Developer · 3 Years · Jaipur, India</div>
-    <div class="availability"><span class="dot-pulse"></span> Open to opportunities</div>
-    <div class="hero-card-info">
-      <div class="info-row"><div class="info-icon">📧</div><a class="info-link" href="mailto:yuvrajniure9828@gmail.com">yuvrajniure9828@gmail.com</a></div>
-      <div class="info-row"><div class="info-icon">📱</div><span>+91 8619806021</span></div>
-      <div class="info-row"><div class="info-icon">📍</div><span>Jaipur, Rajasthan 303012</span></div>
-    </div>
-  </div>
-</div>
+🍔
+Chopable
+IOS · ANDROID
+Multi-service food delivery app connecting users to restaurants, home chefs, and grocery vendors. Live order tracking, in-app chat/calling, real-time delivery with Google Maps, and Stripe payments.
+Flutter
+GetX
+Google Maps
+Socket.IO
+Stripe
+Dio
+Firebase
+chopable.com
 
-<hr class="divider" />
+🛒
+Prestige Konnect
+IOS · ANDROID · TTK PRESTIGE
+Dealer order management app for TTK Prestige (Prestige & Judge brands). Dealers manage orders, view schemes, and raise support tickets. SSL pinning and root detection for enterprise-grade security.
+Flutter
+HTTP
+Firebase
+Google Maps
+SSL Pinning
+Crashlytics
+Play Store
 
-<!-- SKILLS -->
-<div class="section-wrap" id="skills">
-  <div class="section-label">What I bring</div>
-  <h2 class="section-title">Technical skills</h2>
-  <div class="skills-layout" id="skillGrid">
-    <div class="skill-card">
-      <div class="skill-header"><span class="skill-name">Flutter & Dart</span><span class="skill-pct">95%</span></div>
-      <div class="skill-bar-bg"><div class="skill-bar-fill" data-pct="95"></div></div>
-      <div class="skill-sub">Stateful/Stateless widgets, Custom UI, Material & Cupertino</div>
-    </div>
-    <div class="skill-card">
-      <div class="skill-header"><span class="skill-name">State management</span><span class="skill-pct">90%</span></div>
-      <div class="skill-bar-bg"><div class="skill-bar-fill" data-pct="90"></div></div>
-      <div class="skill-sub">GetX, MVVM, Clean Architecture, Repository Pattern, Melos</div>
-    </div>
-    <div class="skill-card">
-      <div class="skill-header"><span class="skill-name">Firebase & Backend</span><span class="skill-pct">90%</span></div>
-      <div class="skill-bar-bg"><div class="skill-bar-fill" data-pct="90"></div></div>
-      <div class="skill-sub">Auth, Firestore, Push Notifications, Crashlytics, Analytics</div>
-    </div>
-    <div class="skill-card">
-      <div class="skill-header"><span class="skill-name">REST APIs & integrations</span><span class="skill-pct">88%</span></div>
-      <div class="skill-bar-bg"><div class="skill-bar-fill" data-pct="88"></div></div>
-      <div class="skill-sub">Dio, Retrofit, HTTP, Socket.IO, Agora, Google Maps</div>
-    </div>
-    <div class="skill-card">
-      <div class="skill-header"><span class="skill-name">Payments & In-App Purchase</span><span class="skill-pct">85%</span></div>
-      <div class="skill-bar-bg"><div class="skill-bar-fill" data-pct="85"></div></div>
-      <div class="skill-sub">Stripe, Razorpay, Sadad, Moamalat, IAP</div>
-    </div>
-    <div class="skill-card">
-      <div class="skill-header"><span class="skill-name">Deployment & DevOps</span><span class="skill-pct">80%</span></div>
-      <div class="skill-bar-bg"><div class="skill-bar-fill" data-pct="80"></div></div>
-      <div class="skill-sub">Play Store, App Store, Git/GitHub/GitLab, Fastlane, Postman</div>
-    </div>
-  </div>
-  <div class="tags-row">
-    <span class="tag">Lottie Animations</span>
-    <span class="tag">SSL Pinning</span>
-    <span class="tag">Root Detection</span>
-    <span class="tag">Flutter Localization</span>
-    <span class="tag">Adobe XD</span>
-    <span class="tag">Figma</span>
-    <span class="tag">Android Studio</span>
-    <span class="tag">OpenAI API</span>
-    <span class="tag">Real-time location</span>
-    <span class="tag">Google Places API</span>
-  </div>
-</div>
+🚴
+Laundry Machine Rider
+IOS · ANDROID
+Delivery rider app for laundry orders — real-time order notifications, instant status updates, trip & delivery history tracking, and performance metrics. Clean MVVM architecture.
+Flutter
+GetX
+MVVM
+Dio
+Firebase
+Crashlytics
+thelaundrymachine.in
 
-<hr class="divider" />
+🏠
+Ayka & Ayka Provider
+IOS · ANDROID
+Two-sided home services marketplace — customers browse categories, book providers, and track appointments in real time. Provider app for managing bookings. Live location, Socket.IO, and Stripe.
+Flutter
+GetX
+Google Maps
+Socket.IO
+Stripe
+Firebase
+MVVM
+LandBridge App
 
-<!-- PROJECTS -->
-<div class="section-wrap" id="projects">
-  <div class="section-label">Real, live apps</div>
-  <h2 class="section-title">Featured projects</h2>
-  <div class="projects-grid">
+Sulaimania (App Store)
 
-    <!-- Avicenna -->
-    <div class="project-card">
-      <div class="project-icon-wrap" style="background:#E8F4FD;">🏥</div>
-      <div class="project-meta">
-        <div>
-          <div class="project-title">Avicenna Care & Doctor</div>
-          <div class="project-platform">iOS · Android · Libya</div>
-        </div>
-      </div>
-      <p class="project-desc">Healthcare consultation platform for Libya — patients book appointments, do video consultations via Agora, order medicine, and access lab services. Two separate apps: patient-facing and doctor-facing, both live.</p>
-      <div class="project-stack">
-        <span class="stack-chip">Flutter</span>
-        <span class="stack-chip">GetX</span>
-        <span class="stack-chip">Agora</span>
-        <span class="stack-chip">Dio</span>
-        <span class="stack-chip">Firebase</span>
-        <span class="stack-chip">Localization</span>
-        <span class="stack-chip">Sadad</span>
-      </div>
-      <a class="project-link" href="https://avicenna-care.com" target="_blank">
-        avicenna-care.com
-        <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M1 11L11 1M11 1H5M11 1V7"/>
-        </svg>
-      </a>
-    </div>
+Freight Country Carrier
 
-    <!-- PlantSpotify -->
-    <div class="project-card">
-      <div class="project-icon-wrap" style="background:#E8F7EF;">🌿</div>
-      <div class="project-meta">
-        <div>
-          <div class="project-title">PlantSpotify</div>
-          <div class="project-platform">iOS · Android · Global</div>
-        </div>
-      </div>
-      <p class="project-desc">AI plant identifier — snap a photo to get instant plant name, disease diagnosis, care tips, and watering schedules. Features In-App Purchase for premium unlimited scans and a personal digital nursery.</p>
-      <div class="project-stack">
-        <span class="stack-chip">Flutter</span>
-        <span class="stack-chip">GetX</span>
-        <span class="stack-chip">Dio</span>
-        <span class="stack-chip">Firebase</span>
-        <span class="stack-chip">In-App Purchase</span>
-        <span class="stack-chip">Localization</span>
-      </div>
-      <a class="project-link" href="https://plantspotify.com" target="_blank">
-        plantspotify.com
-        <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M1 11L11 1M11 1H5M11 1V7"/>
-        </svg>
-      </a>
-    </div>
 
-    <!-- Chopable -->
-    <div class="project-card">
-      <div class="project-icon-wrap" style="background:#FEF3E8;">🍔</div>
-      <div class="project-meta">
-        <div>
-          <div class="project-title">Chopable</div>
-          <div class="project-platform">iOS · Android</div>
-        </div>
-      </div>
-      <p class="project-desc">Multi-service food delivery app connecting users to restaurants, home chefs, and grocery vendors. Live order tracking, in-app chat/calling, real-time delivery with Google Maps, and Stripe payments.</p>
-      <div class="project-stack">
-        <span class="stack-chip">Flutter</span>
-        <span class="stack-chip">GetX</span>
-        <span class="stack-chip">Google Maps</span>
-        <span class="stack-chip">Socket.IO</span>
-        <span class="stack-chip">Stripe</span>
-        <span class="stack-chip">Dio</span>
-        <span class="stack-chip">Firebase</span>
-      </div>
-      <a class="project-link" href="https://chopable.com" target="_blank">
-        chopable.com
-        <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M1 11L11 1M11 1H5M11 1V7"/>
-        </svg>
-      </a>
-    </div>
+WHERE I'VE WORKED
+Experience
+Sep 2024
+Present
 
-    <!-- Prestige Konnect -->
-    <div class="project-card">
-      <div class="project-icon-wrap" style="background:#F0EBF8;">🛒</div>
-      <div class="project-meta">
-        <div>
-          <div class="project-title">Prestige Konnect</div>
-          <div class="project-platform">iOS · Android · TTK Prestige</div>
-        </div>
-      </div>
-      <p class="project-desc">Dealer order management app for TTK Prestige (Prestige & Judge brands). Dealers manage orders, view schemes, and raise support tickets. SSL pinning and root detection for enterprise-grade security.</p>
-      <div class="project-stack">
-        <span class="stack-chip">Flutter</span>
-        <span class="stack-chip">HTTP</span>
-        <span class="stack-chip">Firebase</span>
-        <span class="stack-chip">Google Maps</span>
-        <span class="stack-chip">SSL Pinning</span>
-        <span class="stack-chip">Crashlytics</span>
-      </div>
-      <a class="project-link" href="https://play.google.com/store/apps/details?id=com.intouch.sfa_flutter" target="_blank">
-        Play Store
-        <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M1 11L11 1M11 1H5M11 1V7"/>
-        </svg>
-      </a>
-    </div>
+Flutter Developer
+Deorwine Infotech
+· Jaipur
+	•	Built and maintained cross-platform apps for Android & iOS with high-performance Flutter.
+	•	Implemented GetX state management and MVVM clean architecture across production apps.
+	•	Integrated RESTful APIs using Dio, Retrofit and HTTP; wired up Agora for video calls, Socket.IO for real-time features, and four payment gateways (Stripe, Sadad, Razorpay, Moamalat).
+	•	Handled push notifications, app performance tuning, Flutter SDK upgrades, and published releases to Play Store and App Store.
+	•	Led client communication from requirement gathering through final delivery.
+Jul 2023
+Jun 2024
 
-    <!-- Laundry Machine Rider -->
-    <div class="project-card">
-      <div class="project-icon-wrap" style="background:#E8F3FF;">🚴</div>
-      <div class="project-meta">
-        <div>
-          <div class="project-title">Laundry Machine Rider</div>
-          <div class="project-platform">iOS · Android</div>
-        </div>
-      </div>
-      <p class="project-desc">Delivery rider app for laundry orders — real-time order notifications, instant status updates, trip & delivery history tracking, and performance metrics. Clean MVVM architecture.</p>
-      <div class="project-stack">
-        <span class="stack-chip">Flutter</span>
-        <span class="stack-chip">GetX</span>
-        <span class="stack-chip">MVVM</span>
-        <span class="stack-chip">Dio</span>
-        <span class="stack-chip">Firebase</span>
-        <span class="stack-chip">Crashlytics</span>
-      </div>
-      <a class="project-link" href="https://thelaundrymachine.in/" target="_blank">
-        thelaundrymachine.in
-        <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M1 11L11 1M11 1H5M11 1V7"/>
-        </svg>
-      </a>
-    </div>
+Flutter Developer
+Protechgenie
+· Jaipur
+	•	Developed cross-platform apps with clean UI, responsive layouts, and GetX state management.
+	•	Integrated Firebase services — Auth, Google Sign-In, Facebook Sign-In, Push Notifications — for real-time and secure workflows.
+	•	Handled full client lifecycle: requirements, project scope, technical solutions, and post-deployment support.
+EDUCATION
+MCA — Master of Computer Applications
+Apex University
+2021 – 2023
+BCA — Bachelor of Computer Applications
+University Commerce College
+2018 – 2021
 
-    <!-- Ayka -->
-    <div class="project-card">
-      <div class="project-icon-wrap" style="background:#FFF0F3;">🏠</div>
-      <div class="project-meta">
-        <div>
-          <div class="project-title">Ayka & Ayka Provider</div>
-          <div class="project-platform">iOS · Android</div>
-        </div>
-      </div>
-      <p class="project-desc">Two-sided home services marketplace — customers browse categories, book providers, and track appointments in real time. Provider app for managing bookings. Live location, Socket.IO, and Stripe.</p>
-      <div class="project-stack">
-        <span class="stack-chip">Flutter</span>
-        <span class="stack-chip">GetX</span>
-        <span class="stack-chip">Google Maps</span>
-        <span class="stack-chip">Socket.IO</span>
-        <span class="stack-chip">Stripe</span>
-        <span class="stack-chip">Firebase</span>
-        <span class="stack-chip">MVVM</span>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- more apps row -->
-  <div style="margin-top:1.5rem; display:flex; gap:1rem; flex-wrap:wrap;">
-    <a href="https://play.google.com/store/apps/details?id=com.landbridge.app" target="_blank" class="project-link" style="background:var(--surface);border:1px solid var(--border);padding:10px 16px;border-radius:var(--radius-sm);font-size:13px;">
-      LandBridge App
-      <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><path d="M1 11L11 1M11 1H5M11 1V7"/></svg>
-    </a>
-    <a href="https://apps.apple.com/in/app/sulaimania/id6738335463" target="_blank" class="project-link" style="background:var(--surface);border:1px solid var(--border);padding:10px 16px;border-radius:var(--radius-sm);font-size:13px;">
-      Sulaimania (App Store)
-      <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><path d="M1 11L11 1M11 1H5M11 1V7"/></svg>
-    </a>
-    <a href="https://play.google.com/store/apps/details?id=com.freightcountry.carrier" target="_blank" class="project-link" style="background:var(--surface);border:1px solid var(--border);padding:10px 16px;border-radius:var(--radius-sm);font-size:13px;">
-      Freight Country Carrier
-      <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><path d="M1 11L11 1M11 1H5M11 1V7"/></svg>
-    </a>
-  </div>
-</div>
-
-<hr class="divider" />
-
-<!-- EXPERIENCE -->
-<div class="section-wrap" id="experience">
-  <div class="section-label">Where I've worked</div>
-  <h2 class="section-title">Experience</h2>
-  <div class="timeline">
-
-    <div class="tl-item">
-      <div class="tl-left">
-        <div class="tl-period">Sep 2024<br>Present</div>
-      </div>
-      <div class="tl-right">
-        <div class="tl-dot"></div>
-        <div class="tl-role">Flutter Developer</div>
-        <div class="tl-company-row">
-          <span class="tl-company">Deorwine Infotech</span>
-          <span class="tl-location">· Jaipur</span>
-        </div>
-        <ul class="tl-bullets">
-          <li>Built and maintained cross-platform apps for Android & iOS with high-performance Flutter.</li>
-          <li>Implemented GetX state management and MVVM clean architecture across production apps.</li>
-          <li>Integrated RESTful APIs using Dio, Retrofit and HTTP; wired up Agora for video calls, Socket.IO for real-time features, and four payment gateways (Stripe, Sadad, Razorpay, Moamalat).</li>
-          <li>Handled push notifications, app performance tuning, Flutter SDK upgrades, and published releases to Play Store and App Store.</li>
-          <li>Led client communication from requirement gathering through final delivery.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="tl-item">
-      <div class="tl-left">
-        <div class="tl-period">Jul 2023<br>Jun 2024</div>
-      </div>
-      <div class="tl-right">
-        <div class="tl-dot"></div>
-        <div class="tl-role">Flutter Developer</div>
-        <div class="tl-company-row">
-          <span class="tl-company">Protechgenie</span>
-          <span class="tl-location">· Jaipur</span>
-        </div>
-        <ul class="tl-bullets">
-          <li>Developed cross-platform apps with clean UI, responsive layouts, and GetX state management.</li>
-          <li>Integrated Firebase services — Auth, Google Sign-In, Facebook Sign-In, Push Notifications — for real-time and secure workflows.</li>
-          <li>Handled full client lifecycle: requirements, project scope, technical solutions, and post-deployment support.</li>
-        </ul>
-      </div>
-    </div>
-
-  </div>
-
-  <div style="margin-top:1rem;">
-    <div class="section-label" style="margin-bottom:1rem;">Education</div>
-    <div class="edu-grid">
-      <div class="edu-card">
-        <div class="edu-degree">MCA — Master of Computer Applications</div>
-        <div class="edu-school">Apex University</div>
-        <div class="edu-year">2021 – 2023</div>
-      </div>
-      <div class="edu-card">
-        <div class="edu-degree">BCA — Bachelor of Computer Applications</div>
-        <div class="edu-school">University Commerce College</div>
-        <div class="edu-year">2018 – 2021</div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<hr class="divider" />
-
-<!-- CONTACT -->
-<div class="section-wrap" id="contact">
-  <div class="section-label">Let's work together</div>
-  <h2 class="section-title">Get in touch</h2>
-  <div class="contact-grid">
-    <a class="contact-card" href="mailto:yuvrajniure9828@gmail.com">
-      <div class="cc-icon">✉️</div>
-      <div class="cc-label">Email</div>
-      <div class="cc-value">yuvrajniure9828@gmail.com</div>
-    </a>
-    <a class="contact-card" href="tel:+918619806021">
-      <div class="cc-icon">📱</div>
-      <div class="cc-label">Phone</div>
-      <div class="cc-value">+91 8619806021</div>
-    </a>
-    <div class="contact-card">
-      <div class="cc-icon">📍</div>
-      <div class="cc-label">Location</div>
-      <div class="cc-value">Jaipur, Rajasthan 303012</div>
-    </div>
-  </div>
-</div>
-
-<footer>
-  Built for <strong>Yuvraj Neure</strong> · Flutter Developer · Jaipur, India &nbsp;·&nbsp; 2024
-</footer>
-
-<script>
-  const bars = document.querySelectorAll('.skill-bar-fill');
-  const io = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        const el = e.target;
-        setTimeout(() => { el.style.width = el.getAttribute('data-pct') + '%'; }, 80);
-        io.unobserve(el);
-      }
-    });
-  }, { threshold: 0.4 });
-  bars.forEach(b => io.observe(b));
-</script>
-
-</body>
-</html>
+LET'S WORK TOGETHER
+Get in touch
+✉️
+EMAIL
+yuvrajniure9828@gmail.com
+📱
+PHONE
++91 8619806021
+📍
+LOCATION
+Jaipur, Rajasthan 303012
+Built for Yuvraj Neure · Flutter Developer · Jaipur, India  ·  2024
